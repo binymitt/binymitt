@@ -1,0 +1,3 @@
+SELECT images.id, series.id, studies.patientid, studies.accessionnr, series.modality
+FROM images 
+INNER JOIN series ON images.seriesid = series.id,studies on series.studyid = studies.id
